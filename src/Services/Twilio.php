@@ -1,14 +1,14 @@
 <?php
 
-namespace tpaksu\LaravelOTPLogin\Services;
+namespace farjadtahir\LaravelOTPLogin\Services;
 
-use App\User;
-use tpaksu\LaravelOTPLogin\ServiceInterface;
+use App\Models\User;
+use farjadtahir\LaravelOTPLogin\ServiceInterface;
 
 /**
  * Twilio SMS service handler
  *
- * @namespace tpaksu\LaravelOTPLogin\Services
+ * @namespace farjadtahir\LaravelOTPLogin\Services
  */
 class Twilio implements ServiceInterface
 {
@@ -62,7 +62,7 @@ class Twilio implements ServiceInterface
     /**
      * Sends the generated password to the user and returns if it's successful
      *
-     * @param App\User $user
+     * @param App\Models\User $user
      * @param string $otp
      * @param string $ref
      * @return boolean

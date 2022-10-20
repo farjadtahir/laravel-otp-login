@@ -1,6 +1,6 @@
 <?php
 
-namespace tpaksu\LaravelOTPLogin;
+namespace farjadtahir\LaravelOTPLogin;
 
 use Closure;
 use \Carbon\Carbon;
@@ -186,7 +186,7 @@ class LoginMiddleware
      * Get the active OTP for the given user
      *
      * @param App\User $user
-     * @return \tpaksu\LaravelOTPLogin\OneTimePassword
+     * @return \farjadtahir\LaravelOTPLogin\OneTimePassword
      */
     private function getUserOTP($user)
     {
@@ -196,7 +196,7 @@ class LoginMiddleware
     /**
      * Logs out the user with clearing the OTP records
      *
-     * @param \tpaksu\LaravelOTPLogin\OneTimePassword $otp
+     * @param \farjadtahir\LaravelOTPLogin\OneTimePassword $otp
      * @return \Illuminate\Routing\Redirector|\Illuminate\Http\RedirectResponse
      */
     private function logout($otp)

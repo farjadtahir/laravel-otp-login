@@ -1,8 +1,8 @@
 <?php
 
-namespace tpaksu\LaravelOTPLogin;
+namespace farjadtahir\LaravelOTPLogin;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;

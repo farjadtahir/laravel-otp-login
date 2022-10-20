@@ -1,7 +1,7 @@
 <?php
-namespace tpaksu\LaravelOTPLogin;
+namespace farjadtahir\LaravelOTPLogin;
 
-use App\User;
+use App\Models\User;
 
 interface ServiceInterface
 {

@@ -15,7 +15,7 @@ class CreateOtpLogsTable extends Migration
     {
         Schema::create('one_time_password_logs', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger("user_id")->index();
+            $table->unsignedBigInteger("user_id")->index();
             $table->string('otp_code')->index();
             $table->string('refer_number')->index();
             $table->string('status')->index();

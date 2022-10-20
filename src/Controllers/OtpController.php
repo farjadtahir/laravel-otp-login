@@ -1,12 +1,12 @@
 <?php
 
-namespace tpaksu\LaravelOTPLogin\Controllers;
+namespace farjadtahir\LaravelOTPLogin\Controllers;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use tpaksu\LaravelOTPLogin\OneTimePassword;
-use tpaksu\LaravelOTPLogin\OneTimePasswordLog;
+use farjadtahir\LaravelOTPLogin\OneTimePassword;
+use farjadtahir\LaravelOTPLogin\OneTimePasswordLog;
 
 /**
  * Class for handling OTP view display and processing

@@ -15,7 +15,7 @@ class CreateOtpTable extends Migration
     {
         Schema::create('one_time_passwords', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger("user_id")->index();
+            $table->unsignedBigInteger("user_id")->index();
             $table->string('status')->index();
             $table->timestamps();
         });
